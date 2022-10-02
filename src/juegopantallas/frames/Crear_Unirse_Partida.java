@@ -11,7 +11,7 @@ package juegopantallas.frames;
  */
 public class Crear_Unirse_Partida extends javax.swing.JFrame {
 Configuracion_Partida frame2= new Configuracion_Partida();
-    /**
+/**
      * Creates new form Crear_Unirse_Partida
      */
    

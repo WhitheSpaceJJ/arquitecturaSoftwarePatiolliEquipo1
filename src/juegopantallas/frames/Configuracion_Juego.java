@@ -17,8 +17,7 @@ public class Configuracion_Juego extends javax.swing.JFrame {
     /**
      * Creates new form Configuracion_Juego
      */
-    Configuracion_Partida frame4 =new Configuracion_Partida();
-    Configuracion_Juego frame5 = new Configuracion_Juego();
+
     frame_datosincorrectos error1= new frame_datosincorrectos();
     
     public Configuracion_Juego() {
@@ -56,6 +55,11 @@ public class Configuracion_Juego extends javax.swing.JFrame {
         btn_Comenzar_Partida.setBackground(new java.awt.Color(0, 255, 102));
         btn_Comenzar_Partida.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_Comenzar_Partida.setText("Comenzar Partida");
+        btn_Comenzar_Partida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_Comenzar_PartidaActionPerformed(evt);
+            }
+        });
 
         btn_aplicarCambios.setBackground(new java.awt.Color(0, 255, 51));
         btn_aplicarCambios.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -186,14 +190,19 @@ public class Configuracion_Juego extends javax.swing.JFrame {
 
     private void btn_VolveralMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_VolveralMenuActionPerformed
         // TODO add your handling code here:
-    frame5.dispose();
-        
+    Crear_Unirse_Partida c = new Crear_Unirse_Partida();
+    c.setVisible(true);
+    dispose();
     }//GEN-LAST:event_btn_VolveralMenuActionPerformed
 
     private void btn_aplicarCambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aplicarCambiosActionPerformed
         // TODO add your handling code here:
         agregar();
     }//GEN-LAST:event_btn_aplicarCambiosActionPerformed
+
+    private void btn_Comenzar_PartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Comenzar_PartidaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_Comenzar_PartidaActionPerformed
 
      public void agregar(){
         

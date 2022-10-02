@@ -12,7 +12,8 @@ import javax.swing.JOptionPane;
  * @author Soulshiryu
  */
 public class Configuracion_Partida extends javax.swing.JFrame {
-
+Configuracion_Juego frame3= new Configuracion_Juego();
+   
     /**
      * Creates new form Configuracion_Partida
      */
@@ -100,13 +101,11 @@ public class Configuracion_Partida extends javax.swing.JFrame {
 
     private void btn_Continuar_a_configurancionJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Continuar_a_configurancionJuegoActionPerformed
         // TODO add your handling code here:
-        
-        
          
         
              if(validarCampos()==false){
-//                 Configuracion_Juego frame3= new Configuracion_Juego();
-//                 frame3.setVisible(true);
+                 frame3.setVisible(true);
+                 dispose();
              }
              
              
