@@ -79,8 +79,6 @@ Configuracion_Partida frame2= new Configuracion_Partida();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_CrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CrearPartidaActionPerformed
-        // TODO add your handling code here:
-        
            frame2.setVisible(true);
            /*
            codgio/metodo de crear servidor

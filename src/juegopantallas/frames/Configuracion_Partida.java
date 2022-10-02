@@ -102,10 +102,11 @@ public class Configuracion_Partida extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         
-         Configuracion_Juego frame3= new Configuracion_Juego();
+         
         
              if(validarCampos()==false){
-                 frame3.setVisible(true);
+//                 Configuracion_Juego frame3= new Configuracion_Juego();
+//                 frame3.setVisible(true);
              }
              
              
@@ -150,9 +151,8 @@ public class Configuracion_Partida extends javax.swing.JFrame {
 public boolean validarCampos() {
 
         String NombreJugador = txtnomjugador.getText();
-        String colorjugador = cb_establecerColor.getName();
 
-        if (NombreJugador.isEmpty() || colorjugador.isEmpty()) {
+        if (NombreJugador.isEmpty() ) {
             JOptionPane.showMessageDialog(null, "Establece color y nombre de jugador para empezar");
         return true;
         }
