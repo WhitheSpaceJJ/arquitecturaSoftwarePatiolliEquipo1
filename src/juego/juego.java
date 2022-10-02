@@ -12,7 +12,7 @@ import java.util.Objects;
  * @author Soulshiryu
  */
 public class juego {
-
+    private String cambio;
     @Override
     public String toString() {
         return "juego{" + "apuesta=" + apuesta + ", tama\u00f1otb=" + tamañotb + ", cantidadaq=" + cantidadaq + '}';
