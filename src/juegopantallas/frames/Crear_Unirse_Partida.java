@@ -10,7 +10,7 @@ package juegopantallas.frames;
  * @author Soulshiryu
  */
 public class Crear_Unirse_Partida extends javax.swing.JFrame {
-
+Configuracion_Partida frame2= new Configuracion_Partida();
     /**
      * Creates new form Crear_Unirse_Partida
      */
@@ -42,6 +42,11 @@ public class Crear_Unirse_Partida extends javax.swing.JFrame {
         });
 
         btn_UnirsePartida.setText("Unirse a Partida");
+        btn_UnirsePartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_UnirsePartidaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,10 +80,21 @@ public class Crear_Unirse_Partida extends javax.swing.JFrame {
 
     private void btn_CrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CrearPartidaActionPerformed
         // TODO add your handling code here:
-        Configuracion_Partida frame2= new Configuracion_Partida();
+        
            frame2.setVisible(true);
+           /*
+           codgio/metodo de crear servidor
+           */
            dispose();
     }//GEN-LAST:event_btn_CrearPartidaActionPerformed
+
+    private void btn_UnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_UnirsePartidaActionPerformed
+         frame2.setVisible(true);
+           /*
+           codgio/metodo de crear servidor
+           */
+           dispose();
+    }//GEN-LAST:event_btn_UnirsePartidaActionPerformed
 
     /**
      * @param args the command line arguments
