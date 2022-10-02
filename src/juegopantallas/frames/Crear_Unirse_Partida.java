@@ -77,7 +77,7 @@ public class Crear_Unirse_Partida extends javax.swing.JFrame {
         // TODO add your handling code here:
         Configuracion_Partida frame2= new Configuracion_Partida();
            frame2.setVisible(true);
-        
+           dispose();
     }//GEN-LAST:event_btn_CrearPartidaActionPerformed
 
     /**
