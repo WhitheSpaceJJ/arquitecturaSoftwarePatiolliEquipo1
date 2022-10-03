@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Carlos/Documents/arquitecturaSoftwarePatiolliEquipo1/src/juegopantallas/JuegoPantallas.java</file>
+            <file>file:/C:/Users/Carlos/Documents/arquitecturaSoftwarePatiolliEquipo1/src/juegopantallas/frames/Configuracion_Juego.java</file>
+            <file>file:/C:/Users/Carlos/Documents/arquitecturaSoftwarePatiolliEquipo1/src/juegopantallas/frames/Configuracion_Partida.java</file>
+            <file>file:/C:/Users/Carlos/Documents/arquitecturaSoftwarePatiolliEquipo1/src/juegopantallas/frames/Crear_Unirse_Partida.java</file>
+        </group>
     </open-files>
 </project-private>

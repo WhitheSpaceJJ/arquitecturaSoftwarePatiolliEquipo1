@@ -13,7 +13,8 @@ import juego.usuario;
  * @author Soulshiryu
  */
 public class Configuracion_Partida extends javax.swing.JFrame {
-Configuracion_Juego frame3= new Configuracion_Juego();
+   
+    Configuracion_Juego frame3= new Configuracion_Juego();
    
     /**
      * Creates new form Configuracion_Partida

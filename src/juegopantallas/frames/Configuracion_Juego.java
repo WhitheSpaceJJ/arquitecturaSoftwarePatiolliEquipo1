@@ -252,9 +252,11 @@ public class Configuracion_Juego extends javax.swing.JFrame {
 
     private void btn_VolveralMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_VolveralMenuActionPerformed
         // TODO add your handling code here:
+   
     Crear_Unirse_Partida c = new Crear_Unirse_Partida();
     c.setVisible(true);
     dispose();
+    
     }//GEN-LAST:event_btn_VolveralMenuActionPerformed
 
     private void btn_aplicarCambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aplicarCambiosActionPerformed
