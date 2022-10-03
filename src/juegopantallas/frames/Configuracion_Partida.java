@@ -119,19 +119,19 @@ Configuracion_Juego frame3= new Configuracion_Juego();
                      if ( Configuracion_Juego.JLjugador1.getText().equals("espacio disponible")) {
                          Configuracion_Juego.JLjugador1.setText(u.getNombre());
                          Configuracion_Juego.txt_color1.setText(u.getColor());
-                         System.out.println("bandera j1");
+                
                      }else if(Configuracion_Juego.JLjugador2.getText().equalsIgnoreCase("espacio disponible")){
                          Configuracion_Juego.JLjugador2.setText(u.getNombre());
                          Configuracion_Juego.txt_color2.setText(u.getColor());
-                         System.out.println("bandera j2");
+                 
                      }else if(Configuracion_Juego.JLjugador3.getText().equalsIgnoreCase("espacio disponible")){
                          Configuracion_Juego.JLjugador3.setText(u.getNombre());
                          Configuracion_Juego.txt_color3.setText(u.getColor());
-                         System.out.println("bandera j3");
+                         
                      }else if(Configuracion_Juego.JLjugador4.getText().equalsIgnoreCase("espacio disponible")){
                          Configuracion_Juego.JLjugador4.setText(u.getNombre());
                          Configuracion_Juego.txt_color4.setText(u.getColor());
-                         System.out.println("bandera j4");
+                      
                      }
                  /*
                      Codigo para asignar numeracion de jugadores temportal
