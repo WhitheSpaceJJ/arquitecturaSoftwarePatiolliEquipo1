@@ -50,6 +50,12 @@ public class Configuracion_Partida extends javax.swing.JFrame {
 
         cb_establecerColor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "azul", "amarillo", "rojo", "verde" }));
 
+        txtnomjugador.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtnomjugadorKeyTyped(evt);
+            }
+        });
+
         jLabel1.setText("Color de ficha:");
 
         jLabel2.setText("Nombre de jugador:");
@@ -151,6 +157,12 @@ public class Configuracion_Partida extends javax.swing.JFrame {
       
     }//GEN-LAST:event_btn_Continuar_a_configurancionJuegoActionPerformed
 
+    private void txtnomjugadorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnomjugadorKeyTyped
+        // TODO add your handling code here:
+        validarcaracteres(evt);
+      
+    }//GEN-LAST:event_txtnomjugadorKeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -232,6 +244,16 @@ public class Configuracion_Partida extends javax.swing.JFrame {
         
         return false;
     }
+        public void validarcaracteres(java.awt.event.KeyEvent evento){
+         if (evento.getKeyChar ( ) >=33 && evento.getKeyChar()<= 47
+        || evento.getKeyChar() >= 91 && evento.getKeyChar ( ) <= 96
+        || evento.getKeyChar() >= 123 && evento.getKeyChar ( ) <= 208
+        || evento.getKeyChar() >= 210 && evento.getKeyChar ( ) <= 240
+        || evento.getKeyChar() >= 242 && evento.getKeyChar ( ) <=255 ) {
+    evento.consume();
+    JOptionPane.showMessageDialog ( this," No se permiten caracteres especiales" );
+ }
+     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_Continuar_a_configurancionJuego;
     private javax.swing.JComboBox cb_establecerColor;

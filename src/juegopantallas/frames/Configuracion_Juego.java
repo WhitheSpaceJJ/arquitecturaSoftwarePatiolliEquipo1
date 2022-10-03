@@ -162,6 +162,23 @@ public class Configuracion_Juego extends javax.swing.JFrame {
 
         jLabel4.setText("Tamaño del tablero:");
 
+        txt_ApuestaInicial.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_ApuestaInicialKeyTyped(evt);
+            }
+        });
+
+        txt_CantidadQuitar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_CantidadQuitarActionPerformed(evt);
+            }
+        });
+        txt_CantidadQuitar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_CantidadQuitarKeyTyped(evt);
+            }
+        });
+
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Chico", "Mediano", "Grande", " " }));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -262,6 +279,7 @@ public class Configuracion_Juego extends javax.swing.JFrame {
     private void btn_aplicarCambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aplicarCambiosActionPerformed
         // TODO add your handling code here:
         agregar();
+    
     }//GEN-LAST:event_btn_aplicarCambiosActionPerformed
 
     private void btn_Comenzar_PartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Comenzar_PartidaActionPerformed
@@ -269,6 +287,29 @@ public class Configuracion_Juego extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btn_Comenzar_PartidaActionPerformed
+
+    private void txt_ApuestaInicialKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_ApuestaInicialKeyTyped
+        // TODO add your handling code here:
+         char letra = evt.getKeyChar ();
+         
+       if ((letra<'a'||letra>'z')&&( letra <'0')|| letra>'9') evt.consume();
+       validarcaracteres(evt);
+       
+        
+    }//GEN-LAST:event_txt_ApuestaInicialKeyTyped
+
+    private void txt_CantidadQuitarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_CantidadQuitarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_CantidadQuitarActionPerformed
+
+    private void txt_CantidadQuitarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_CantidadQuitarKeyTyped
+        // TODO add your handling code here:
+         char letra= evt.getKeyChar();
+         
+        if ((letra<'a'||letra>'z')&&( letra <'0')|| letra>'9') evt.consume();
+        
+        validarcaracteres(evt);
+    }//GEN-LAST:event_txt_CantidadQuitarKeyTyped
 
      public void agregar(){
         
@@ -291,8 +332,19 @@ public class Configuracion_Juego extends javax.swing.JFrame {
         }
     }
     /**
+     * @param evento
      * @param args the command line arguments
      */
+     public void validarcaracteres(java.awt.event.KeyEvent evento){
+         if (evento.getKeyChar ( ) >=33 && evento.getKeyChar()<= 47
+        || evento.getKeyChar() >= 91 && evento.getKeyChar ( ) <= 96
+        || evento.getKeyChar() >= 123 && evento.getKeyChar ( ) <= 208
+        || evento.getKeyChar() >= 210 && evento.getKeyChar ( ) <= 240
+        || evento.getKeyChar() >= 242 && evento.getKeyChar ( ) <=255 ) {
+    evento.consume();
+    JOptionPane.showMessageDialog ( this," No se permiten caracteres especiales" );
+ }
+     }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -347,4 +399,6 @@ public class Configuracion_Juego extends javax.swing.JFrame {
     public static javax.swing.JTextField txt_color3;
     public static javax.swing.JTextField txt_color4;
     // End of variables declaration//GEN-END:variables
+
+   
 }
