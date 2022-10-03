@@ -6,6 +6,7 @@
 package juegopantallas.frames;
 
 import javax.swing.JOptionPane;
+import juego.usuario;
 
 /**
  *
@@ -104,8 +105,45 @@ Configuracion_Juego frame3= new Configuracion_Juego();
          
         
              if(validarCampos()==false){
+                 
                  frame3.setVisible(true);
-                 dispose();
+                 usuario u = new usuario();
+                 u.setNombre(txtnomjugador.getText());
+                 String color = (String) cb_establecerColor.getSelectedItem();
+                 u.setColor(color);
+                 
+                    if (validarUsuarios(u)==false) {
+                 /*
+                     Codigo para asignar numeracion de jugadores temportal
+                     */    
+                     if ( Configuracion_Juego.JLjugador1.getText().equals("espacio disponible")) {
+                         Configuracion_Juego.JLjugador1.setText(u.getNombre());
+                         Configuracion_Juego.txt_color1.setText(u.getColor());
+                         System.out.println("bandera j1");
+                     }else if(Configuracion_Juego.JLjugador2.getText().equalsIgnoreCase("espacio disponible")){
+                         Configuracion_Juego.JLjugador2.setText(u.getNombre());
+                         Configuracion_Juego.txt_color2.setText(u.getColor());
+                         System.out.println("bandera j2");
+                     }else if(Configuracion_Juego.JLjugador3.getText().equalsIgnoreCase("espacio disponible")){
+                         Configuracion_Juego.JLjugador3.setText(u.getNombre());
+                         Configuracion_Juego.txt_color3.setText(u.getColor());
+                         System.out.println("bandera j3");
+                     }else if(Configuracion_Juego.JLjugador4.getText().equalsIgnoreCase("espacio disponible")){
+                         Configuracion_Juego.JLjugador4.setText(u.getNombre());
+                         Configuracion_Juego.txt_color4.setText(u.getColor());
+                         System.out.println("bandera j4");
+                     }
+                 /*
+                     Codigo para asignar numeracion de jugadores temportal
+                     */    
+                 }
+                    
+                   /*
+                    temporal mente desactive el dispose, para que se puedan ir agregando diferentes jugadores, lo que pasa es que en la linea 16 se crea un frame configuracion_juego diferente
+                    por lo tando mientras no tengamos los metodos de conexion se mantrenda el dispose como comentado.
+                    */
+//                 dispose();
+                 
              }
              
              
@@ -147,14 +185,50 @@ Configuracion_Juego frame3= new Configuracion_Juego();
         });
         
     }
-public boolean validarCampos() {
-
-        String NombreJugador = txtnomjugador.getText();
-
-        if (NombreJugador.isEmpty() ) {
+        public boolean validarCampos() {
+        if (txtnomjugador.getText().isEmpty() ) {
             JOptionPane.showMessageDialog(null, "Establece color y nombre de jugador para empezar");
         return true;
         }
+        return false;
+    }
+        
+        public boolean validarUsuarios(usuario u) {
+        if (u.getNombre().equals(Configuracion_Juego.JLjugador1.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
+        return true;
+        }
+        if (u.getNombre().equals(Configuracion_Juego.JLjugador2.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
+        return true;
+        }
+        if (u.getNombre().equals(Configuracion_Juego.JLjugador3.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
+        return true;
+        }
+        if (u.getNombre().equals(Configuracion_Juego.JLjugador4.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
+        return true;
+        }
+        
+        if (u.getColor().equals(Configuracion_Juego.txt_color1.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
+        return true;
+        }
+        if (u.getColor().equals(Configuracion_Juego.txt_color2.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
+        return true;
+        }
+        if (u.getColor().equals(Configuracion_Juego.txt_color3.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
+        return true;
+        }
+        if (u.getColor().equals(Configuracion_Juego.txt_color4.getText()) ) {
+            JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
+        return true;
+        }
+        
+        
         return false;
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
