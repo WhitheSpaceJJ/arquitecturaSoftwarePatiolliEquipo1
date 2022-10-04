@@ -12,14 +12,14 @@ import juego.usuario;
  *
  * @author Soulshiryu
  */
-public class Configuracion_Partida extends javax.swing.JFrame {
+public class FrameConfJugador extends javax.swing.JFrame {
    
-    Configuracion_Juego frame3= new Configuracion_Juego();
+    FrameLobby frame3= new FrameLobby();
    
     /**
      * Creates new form Configuracion_Partida
      */
-    public Configuracion_Partida() {
+    public FrameConfJugador() {
         initComponents();
     }
 
@@ -123,21 +123,21 @@ public class Configuracion_Partida extends javax.swing.JFrame {
                  /*
                      Codigo para asignar numeracion de jugadores temportal
                      */    
-                     if ( Configuracion_Juego.JLjugador1.getText().equals("espacio disponible")) {
-                         Configuracion_Juego.JLjugador1.setText(u.getNombre());
-                         Configuracion_Juego.txt_color1.setText(u.getColor());
+                     if ( FrameLobby.JLjugador1.getText().equals("espacio disponible")) {
+                         FrameLobby.JLjugador1.setText(u.getNombre());
+                         FrameLobby.txt_color1.setText(u.getColor());
                 
-                     }else if(Configuracion_Juego.JLjugador2.getText().equalsIgnoreCase("espacio disponible")){
-                         Configuracion_Juego.JLjugador2.setText(u.getNombre());
-                         Configuracion_Juego.txt_color2.setText(u.getColor());
+                     }else if(FrameLobby.JLjugador2.getText().equalsIgnoreCase("espacio disponible")){
+                         FrameLobby.JLjugador2.setText(u.getNombre());
+                         FrameLobby.txt_color2.setText(u.getColor());
                  
-                     }else if(Configuracion_Juego.JLjugador3.getText().equalsIgnoreCase("espacio disponible")){
-                         Configuracion_Juego.JLjugador3.setText(u.getNombre());
-                         Configuracion_Juego.txt_color3.setText(u.getColor());
+                     }else if(FrameLobby.JLjugador3.getText().equalsIgnoreCase("espacio disponible")){
+                         FrameLobby.JLjugador3.setText(u.getNombre());
+                         FrameLobby.txt_color3.setText(u.getColor());
                          
-                     }else if(Configuracion_Juego.JLjugador4.getText().equalsIgnoreCase("espacio disponible")){
-                         Configuracion_Juego.JLjugador4.setText(u.getNombre());
-                         Configuracion_Juego.txt_color4.setText(u.getColor());
+                     }else if(FrameLobby.JLjugador4.getText().equalsIgnoreCase("espacio disponible")){
+                         FrameLobby.JLjugador4.setText(u.getNombre());
+                         FrameLobby.txt_color4.setText(u.getColor());
                       
                      }
                  /*
@@ -180,20 +180,21 @@ public class Configuracion_Partida extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameConfJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameConfJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameConfJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameConfJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Configuracion_Partida().setVisible(true);
+                new FrameConfJugador().setVisible(true);
             }
         });
         
@@ -207,36 +208,36 @@ public class Configuracion_Partida extends javax.swing.JFrame {
     }
         
         public boolean validarUsuarios(usuario u) {
-        if (u.getNombre().equals(Configuracion_Juego.JLjugador1.getText()) ) {
+        if (u.getNombre().equals(FrameLobby.JLjugador1.getText()) ) {
             JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
         return true;
         }
-        if (u.getNombre().equals(Configuracion_Juego.JLjugador2.getText()) ) {
+        if (u.getNombre().equals(FrameLobby.JLjugador2.getText()) ) {
             JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
         return true;
         }
-        if (u.getNombre().equals(Configuracion_Juego.JLjugador3.getText()) ) {
+        if (u.getNombre().equals(FrameLobby.JLjugador3.getText()) ) {
             JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
         return true;
         }
-        if (u.getNombre().equals(Configuracion_Juego.JLjugador4.getText()) ) {
+        if (u.getNombre().equals(FrameLobby.JLjugador4.getText()) ) {
             JOptionPane.showMessageDialog(null, "Nombre ya creado, favor de usar otro");
         return true;
         }
         
-        if (u.getColor().equals(Configuracion_Juego.txt_color1.getText()) ) {
+        if (u.getColor().equals(FrameLobby.txt_color1.getText()) ) {
             JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
         return true;
         }
-        if (u.getColor().equals(Configuracion_Juego.txt_color2.getText()) ) {
+        if (u.getColor().equals(FrameLobby.txt_color2.getText()) ) {
             JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
         return true;
         }
-        if (u.getColor().equals(Configuracion_Juego.txt_color3.getText()) ) {
+        if (u.getColor().equals(FrameLobby.txt_color3.getText()) ) {
             JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
         return true;
         }
-        if (u.getColor().equals(Configuracion_Juego.txt_color4.getText()) ) {
+        if (u.getColor().equals(FrameLobby.txt_color4.getText()) ) {
             JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
         return true;
         }

@@ -9,15 +9,15 @@ package juegopantallas.frames;
  *
  * @author Soulshiryu
  */
-public class Crear_Unirse_Partida extends javax.swing.JFrame {
-Configuracion_Partida frame2= new Configuracion_Partida();
+public class FrameInicial extends javax.swing.JFrame {
+FrameConfJugador frame2= new FrameConfJugador();
 
 
 /**
      * Creates new form Crear_Unirse_Partida
      */
    
-    public Crear_Unirse_Partida() {
+    public FrameInicial() {
         
         initComponents();
     }
@@ -113,16 +113,16 @@ Configuracion_Partida frame2= new Configuracion_Partida();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Crear_Unirse_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Crear_Unirse_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Crear_Unirse_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Crear_Unirse_Partida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameInicial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
- Crear_Unirse_Partida frame1= new Crear_Unirse_Partida();
+ FrameInicial frame1= new FrameInicial();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

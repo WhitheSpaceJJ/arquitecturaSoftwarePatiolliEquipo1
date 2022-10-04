@@ -13,7 +13,7 @@ import juego.usuario;
  *
  * @author Soulshiryu
  */
-public class Configuracion_Juego extends javax.swing.JFrame {
+public class FrameLobby extends javax.swing.JFrame {
 
     /**
      * Creates new form Configuracion_Juego
@@ -21,7 +21,7 @@ public class Configuracion_Juego extends javax.swing.JFrame {
 
     
     
-    public Configuracion_Juego() {
+    public FrameLobby() {
         initComponents();
         
         
@@ -270,7 +270,7 @@ public class Configuracion_Juego extends javax.swing.JFrame {
     private void btn_VolveralMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_VolveralMenuActionPerformed
         // TODO add your handling code here:
    
-    Crear_Unirse_Partida c = new Crear_Unirse_Partida();
+    FrameInicial c = new FrameInicial();
     c.setVisible(true);
     dispose();
     
@@ -359,20 +359,21 @@ public class Configuracion_Juego extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameLobby.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameLobby.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameLobby.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Configuracion_Juego.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrameLobby.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Configuracion_Juego().setVisible(true);
+                new FrameLobby().setVisible(true);
             }
         });
     }

@@ -5,7 +5,7 @@
  */
 package juegopantallas;
 
-import juegopantallas.frames.Crear_Unirse_Partida;
+import juegopantallas.frames.FrameInicial;
 
 /**
  *
@@ -18,7 +18,7 @@ public class JuegoPantallas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new Crear_Unirse_Partida().setVisible(true);
+        new FrameInicial().setVisible(true);
     }
     
 }
