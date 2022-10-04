@@ -142,13 +142,12 @@ public class FrameConfJugador extends javax.swing.JFrame {
                  }
                     
                    /*
-                    temporal mente desactive el dispose, para que se puedan ir agregando diferentes jugadores, lo que pasa es que en la linea 16 se crea un frame configuracion_juego diferente
+                    temporal mente desactive el dispose, para que se puedan ir agregando diferentes jugadores, 
+                    lo que pasa es que en la linea 16 se crea un frame configuracion_juego diferente
                     por lo tando mientras no tengamos los metodos de conexion se mantrenda el dispose como comentado.
                     */
 //                 dispose();
              }
-             
-             
       
     }//GEN-LAST:event_btn_Continuar_a_configurancionJuegoActionPerformed
 
