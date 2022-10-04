@@ -13,7 +13,7 @@ import juego.usuario;
  * @author Soulshiryu
  */
 public class FrameConfJugador extends javax.swing.JFrame {
-   
+ 
     FrameLobby frame3= new FrameLobby();
    
     /**
@@ -108,9 +108,6 @@ public class FrameConfJugador extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_Continuar_a_configurancionJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Continuar_a_configurancionJuegoActionPerformed
-        // TODO add your handling code here:
-         
-        
              if(validarCampos()==false){
                  
                  frame3.setVisible(true);
@@ -138,7 +135,6 @@ public class FrameConfJugador extends javax.swing.JFrame {
                      }else if(FrameLobby.JLjugador4.getText().equalsIgnoreCase("espacio disponible")){
                          FrameLobby.JLjugador4.setText(u.getNombre());
                          FrameLobby.txt_color4.setText(u.getColor());
-                      
                      }
                  /*
                      Codigo para asignar numeracion de jugadores temportal
@@ -150,7 +146,6 @@ public class FrameConfJugador extends javax.swing.JFrame {
                     por lo tando mientras no tengamos los metodos de conexion se mantrenda el dispose como comentado.
                     */
 //                 dispose();
-                 
              }
              
              
@@ -241,7 +236,6 @@ public class FrameConfJugador extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Color ocupado, favor de seleccionar otro");
         return true;
         }
-        
         
         return false;
     }

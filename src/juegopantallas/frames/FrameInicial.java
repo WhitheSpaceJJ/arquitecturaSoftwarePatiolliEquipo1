@@ -83,7 +83,7 @@ FrameConfJugador frame2= new FrameConfJugador();
     private void btn_CrearPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CrearPartidaActionPerformed
            frame2.setVisible(true);
            /*
-           codgio/metodo de crear servidor
+           codgio/metodo de CREAR servidor
            */
            dispose();
     }//GEN-LAST:event_btn_CrearPartidaActionPerformed
@@ -91,7 +91,7 @@ FrameConfJugador frame2= new FrameConfJugador();
     private void btn_UnirsePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_UnirsePartidaActionPerformed
          frame2.setVisible(true);
            /*
-           codgio/metodo de crear servidor
+           codgio/metodo de UNIRSE servidor
            */
            dispose();
     }//GEN-LAST:event_btn_UnirsePartidaActionPerformed
