@@ -60,7 +60,7 @@ public class FrameConfJugador extends javax.swing.JFrame {
 
         jLabel2.setText("Nombre de jugador:");
 
-        jLabel3.setText("Configuracion De Partda");
+        jLabel3.setText("Configuracion De Jugador");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
